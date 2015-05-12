@@ -10,14 +10,16 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView" />
 
-    <ImageButton
+    <Button
+        android:text="Button"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:src="@drawable/button_a"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="75dp"
-        android:background="@drawable/button_a" />
+        android:layout_width="wrap_content"
+        android:id="@+id/imageview1"
+        android:visibility="invisible" />
 
 </RelativeLayout>
