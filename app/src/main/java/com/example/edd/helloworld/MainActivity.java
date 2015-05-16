@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -18,17 +19,16 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-        Button button = (Button) findViewById(R.id.button1);
-
-        button.setOnClickListener(new OnClickListener() {
-            public void onClick(View v)
-            {
-                ImageView iv = (ImageView) findViewById(R.id.imageview1);
-                iv.setVisibility(View.VISIBLE);
-            }
-        });
+    }
+    public void onClickButton1(View view)
+    {
+        String abc;
+        //abc=view.getClass().getName();
+        Button b = (Button) view;
+        abc=b.getClass().getName();
+        TextView myTextView = (TextView)
+                findViewById(R.id.textView);
+        myTextView.setText(abc);
     }
 
     @Override
@@ -55,3 +55,4 @@ public class MainActivity extends ActionBarActivity {
 
 
 }
+
