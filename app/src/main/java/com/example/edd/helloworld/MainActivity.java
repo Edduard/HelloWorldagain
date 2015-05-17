@@ -6,29 +6,34 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.app.Activity;
-import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.content.Intent;
+
 
 
 public class MainActivity extends ActionBarActivity {
+
+    //Declara mesajul care va fi trimis catre cealalta activitate
+    public final static String EXTRA_MESSAGE = "Mesaj trimis de la activitatea trecutas";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    //Actiunea care se desfasoara cand se apasa pe Buttonul 1
     public void onClickButton1(View view)
     {
-        String abc;
-        //abc=view.getClass().getName();
-        Button b = (Button) view;
-        abc=b.getClass().getName();
-        TextView myTextView = (TextView)
-                findViewById(R.id.textView);
-        myTextView.setText(abc);
+        Intent intent = new Intent(this, NextActivity.class);  //primul parametru este activitatea de la care se trimite intentul catre cel de-al doilea parametru (activitatea urmatoare)
+        TextView text = (TextView) findViewById(R.id.textView);
+        String message = text.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 
     @Override
