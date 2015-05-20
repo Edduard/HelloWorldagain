@@ -30,11 +30,9 @@ public class MainActivity extends ActionBarActivity {
     public void onClickButton1(View view)
     {
         Intent intent = new Intent(this, NextActivity.class);  //primul parametru este activitatea de la care se trimite intentul catre cel de-al doilea parametru (activitatea urmatoare)
-        /*
         TextView text = (TextView) findViewById(R.id.textView); //Cauta textView-ul de unde sa ia textul care o sa fie trimis catre utmatorul activity
         String message = text.getText().toString(); //Salveaza textul textView-ului curent in "message"
-        intent.putExtra(EXTRA_MESSAGE, message);    //Pune mesajul "message" in variabila cu numele "EXTRA_MESSAGE" si o adauga la intent
-        */
+        intent.putExtra(EXTRA_MESSAGE, message);    //Pune mesajul "message" in variabila cu numele "EXTRA_MESSAGE" si o adauga la inten
         startActivity(intent);  //Porneste activitatea urmatoare prin intent
     }
 
