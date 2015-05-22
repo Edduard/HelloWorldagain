@@ -5,5 +5,5 @@ package com.example.edd.ReadyToStudy;
  */
 public class ClasaDeTestare
 {
-	//Asta e comentariul lui ED la clasa Java
+	//Asta e comentariul lui ED la clasa Java aa
 }
