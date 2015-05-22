@@ -1,4 +1,4 @@
-package com.example.edd.helloworld.util;
+package com.example.edd.ReadyToStudy.util;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

@@ -3,7 +3,7 @@
              android:layout_width="fill_parent"
              android:layout_height="fill_parent"
              android:background="#0099cc"
-             tools:context="com.example.edd.helloworld.SplashScreenActivity">
+             tools:context="com.example.edd.ReadyToStudy.SplashScreenActivity">
 
     <ImageView android:id="@+id/splashscreen" android:layout_width="wrap_content"
                android:layout_height="fill_parent"

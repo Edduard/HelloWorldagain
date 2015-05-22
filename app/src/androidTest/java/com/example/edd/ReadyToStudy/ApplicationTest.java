@@ -1,4 +1,4 @@
-package com.example.edd.helloworld;
+package com.example.edd.ReadyToStudy;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
