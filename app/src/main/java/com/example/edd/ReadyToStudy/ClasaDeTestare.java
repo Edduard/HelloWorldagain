@@ -7,4 +7,5 @@ public class ClasaDeTestare
 {
 	//Asta e comentariul llasa Java aa
     //asidjaisjdioajsd
+
 }
